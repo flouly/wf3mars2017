@@ -1,0 +1,48 @@
+/*logic selector*/
+
+    /*all text to be centered*/
+    body{
+        text-align: center;
+    }
+
+        /*select h2 and h3 tags*/
+        h2, h3{
+            /*change font color: */
+            color:red;
+         }
+
+         /*select a tag*/
+         a{
+             /*cancel underscore*/
+             text-decoration: none;
+         }
+
+         /*selector imbriquee*/
+         h2 b{
+             color: green;
+         }
+
+         .redBackground h2{
+             color: white;
+         }
+
+/*class selector*/
+    /*select class redBackground*/
+    .redBackground{
+        /*modify background color*/
+        background-color: rebeccapurple;
+    }
+    /*id selector*/
+    #bigTitle{
+    /*modify font size*/
+    font-size: 3rem;
+    }
+
+/*state selector*/
+    /*change when hoovering*/
+    a:hover{
+        color: red;
+    }
+    .redBackground:hover{
+        background-color: green;
+    }

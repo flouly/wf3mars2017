@@ -1,0 +1,120 @@
+/*style reset*/
+
+    /*select all DOM tags*/
+    *{
+        /*cancel intrior margin*/
+        padding: 0;    
+
+        margin: 0;
+    }
+
+    /*ramenez la valeur de 1rem a 10px*/
+    html{
+        font-size: 62.5%;
+    }
+
+    /*1.5rem = 15px*/
+    body{
+        font-size: 1.5rem; 
+    }
+
+    /*Add margin to section*/
+    
+    section{
+        margin-bottom: 4rem;
+
+    }
+
+    /*limit width of header main footer*/
+     header, main, footer{
+        max-width: 85rem;
+     
+        /*center a block tyope reduite width*/
+        margin: 2rem auto;
+     }
+
+/*em/rem*/
+    /*3 time */
+    h1{
+        font-size: 3rem;
+    }
+    /*2 times smaller that its direct parent*/
+    b{
+       font-size: 0.5rem;
+    }
+
+    /*style header*/
+    
+    header{
+        /*ajouter a 1px red border*/
+        border: .5rem solid red;
+        /*add a margin inside tag*/
+        padding: 2rem;
+        
+    }
+
+    /*modify tag type of li*/
+    li{
+        display: inline-block;
+    }
+
+
+
+    /*mise en forme topographique*/
+
+        .presentation{
+
+            /*modify family car of font*/
+            font-family: "Arial", sans-serif;
+
+            /*modify font size*/
+            font-size: 1.7rem;
+
+            /*modify inerlignage*/
+            line-height: 1.2em;
+
+            /*modify font weight*/
+            font-weight: bold;
+
+            /*add a shadow*/
+            text-shadow: .5rem .5rem .5rem blue;
+
+            /*modify font case*/
+            text-transform: uppercase;
+
+            /*modify font style*/
+            font-style: italic;
+
+            /*modify text decoration*/
+            text-decoration: underline;
+
+            /*modify font color*/
+            color: white;
+
+            padding: 2rem;
+            background-color: red;
+            margin: 4rem auto;
+
+        }
+        
+/*Utilisation des couleurs*/
+
+    #portfolio{
+        background-color: #134e7d;/*hexadecimal*/
+        color: white;
+        text-align: center;/*agit sur les textes et les balises inline (enfant)*/
+    }
+
+    
+    #portfolio article{
+        /*utiliser rgba pour l'opacite*/
+        background-color: rgba(255, 255, 255, .5);
+
+        padding: 2rem;
+        margin: 1rem;
+        color: black;
+
+        /*article on 3 columns*/
+
+        display: inline-block;
+    }
