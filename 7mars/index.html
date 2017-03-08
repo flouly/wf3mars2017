@@ -1,0 +1,113 @@
+<!--declare le doctype-->
+<!DOCTYPE html>
+
+<html>
+    <!--ouvrir la balise html-->
+    <!--configurer la page-->
+
+    <head>
+
+        <meta charset="UTF-8">
+        <style>
+            td{
+                border: 1px dashed black; width: 50px; height: 50px; text-align: center;
+            }
+            .legend{
+                color:aqua;
+            }
+            ol{
+               background-color: blue; 
+            }
+            ul{
+                background-color: #ff0000; list-style-type: none;
+            }
+            table{
+                border: 1px dashed black;  border-collapse: collapse;
+            }
+            #ciel{
+                background-image:url(https://cdn.pixabay.com/photo/2011/12/15/10/22/helix-nebula-11155__340.jpg); background-size: 100% 100%;
+            }
+            form{
+                text-align:center;
+            }
+        </style>
+
+        <title>Bonjour monde</title>
+        
+    </head>
+
+    <body>
+
+       <!--definir une zone-->
+      
+
+       <!--les titres-->
+       <h1>Titre principal</h1> 
+        <!--la balise h1  doit etre unique-->
+
+        <h2>sous titre  jusqu a H6</h2>
+
+        <!-- lien dans un nouvel onglet-->
+
+        <a href="about.html">A propos de moi</a>
+
+
+        <p>Lorem ipsum dolor sit amet,<b> consectetur adipisicing elit</b>. Beatae, deleniti dolor sit aspernatur voluptatem debitis inventore voluptate, dignissimos, similique voluptatum molestias iure et <i>quaerat harum nisi neque </i> placeat facilis.</p>
+
+        <!--liste ordonnee-->
+
+        <ol>
+            <li>Pierre</li>
+            <li>Paul</li>
+            <li>Jacques</li>
+        </ol>
+
+     <!--liste non ordonnee-->
+        <ul>
+            <li>Jhon</li>
+            <li>Paul</li>
+         
+        </ul>
+
+    <!--image-->
+    <img src="img/centaurus.jpg" alt="photo centaurus">
+
+    <table>
+        <tbody>
+            <tr >
+                <td></td>
+                <td></td>
+                <td></td>
+                 
+            </tr>
+            <tr>
+                <td></td>
+                <td>mike</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </tbody>
+
+
+    </table>
+
+    <form action="/action_page.php" > 
+    <fieldset id="ciel">
+        <legend class="legend" style="text-align:left">Personnal information</legend>
+        <p class="legend">First name:</p>
+        <input type="text" name="first name">
+       <p class="legend"> Last name:</p>
+        <input type="text" name="last name">
+        <p>
+            <input type="submit" value="submit">
+        </p>
+    </fieldset>
+    </form>
+    </body>
+
+</html>
+<!--fermer la balise html-->
