@@ -2,7 +2,7 @@
 
     /*select all DOM tags*/
     *{
-        /*cancel intrior margin*/
+        /*cancel interior margin*/
         padding: 0;    
 
         margin: 0;
@@ -29,7 +29,7 @@
      header, main, footer{
         max-width: 85rem;
      
-        /*center a block tyope reduite width*/
+        /*center a block type reduite width*/
         margin: 2rem auto;
      }
 
