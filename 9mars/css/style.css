@@ -30,6 +30,37 @@
         max-width: 100%;
     }
 
+    section{
+         
+          padding: 6rem;
+        
+    }
+
+    h2{
+
+        font-size: 4rem;
+
+        text-align: center;
+
+        text-transform: uppercase;
+
+        margin-bottom: 3rem;                
+    }
+
+    h3{
+        /*Changer la couleur*/
+        color: snow;
+
+        /*Modifier la casse*/
+        text-transform: uppercase;
+
+        /*Ajouter une marge exterieur*/     
+        margin-bottom: 3rem;
+
+
+        font-size: 2.5rem;
+    }
+
 
 /*Style header*/
 
@@ -43,6 +74,9 @@
 
          /*Ajouter couleur de fond*/
          background: #18bc9c;
+
+        /*Ajouter une marge interieur en bas de 60px*/
+         padding-bottom: 6rem;
     }
 
     nav{
@@ -53,6 +87,12 @@
         background: #2C3E50;
         /*Aligner le texte en ligne*/
         text-align: left;
+
+        /*Ajouter une marge interieur*/
+        padding: 3rem;
+
+        /*Ajouter une marge exterieur*/
+        margin-bottom: 6rem;
 
     }
 
@@ -71,3 +111,151 @@
         /*Ajouter une marge exterieur*/
         margin-right: 1rem;
     }
+    
+    h1{
+        /*Mettre le texte en majuscule*/
+        text-transform: uppercase;
+
+        /*Ajouter une marge interieur en haut*/
+        padding-top: 3rem;
+
+        font-size: 5rem
+    }
+
+    headet p{
+
+        font-size: 3.5rem;
+    }
+
+/*Style portfolio*/
+
+    #portfolio {
+        text-align: center;
+    }
+
+    #portfolio a{
+    /*fait disparaitre les a*/
+    display: none;
+
+    }
+
+    #portfolio article{
+
+        /*Ajouter une marge exterieur*/
+        margin: 1rem;
+
+        /*creer 3 colonnes*/
+        display: inline-block;
+        width: 29%;
+
+    }
+
+
+    /*Style about*/
+
+    #aboutMe{
+        /*Modifier la couleur de texte*/
+        color: snow;
+        /*Modifier la couleur de fond*/
+        background: #18bc9c;
+        /*centre le texte*/
+        text-align: center;
+    }
+
+
+    #aboutMe p{
+      /*Affiche le texte sur 2 colonnes*/
+    -webkit-column-count: 2; /* Chrome, Safari, Opera */
+    -moz-column-count: 2; /* Firefox */
+    column-count: 2; 
+
+    /*Justifier le texte*/
+    text-align: justify;  
+
+    margin-bottom: 4rem;
+  }
+
+  #aboutMe a{
+      color: white;
+      border: .3rem solid white ;
+      padding: 1rem 1.5rem;
+      font-weight: bold;
+
+      /*creer un bord arrondi*/
+      border-radius: 1rem;
+
+
+  }
+
+  /*Style contact me*/
+
+    input, textarea{
+        display: block;
+        width: 90%;
+        margin: 1rem;
+        padding: 1rem;
+        font-size: 2rem;
+
+        /*Annuler le style du navigateur*/
+        border: none;
+        /*redefinir la bordure*/
+        border-bottom: .1rem solid #c0c0c0;
+    }
+
+
+    textarea{
+        /*definir la hauteur de textarea*/
+        min-height: 20rem;
+    }
+
+    /*Selectionner une balise grace a sonattribut et sa valeur*/
+
+    [type="submit"]{
+        display: inline-block;
+        width: 10rem;
+        color: white;
+        font-weight: bold;
+        margin-left: 3rem;
+        background:#18BC9C;
+        border-radius: 1rem;
+    }
+
+    /*Style footer*/
+
+    footer{
+        color: white;
+        text-align: center;
+        background: #2c3e50;
+    }
+
+    footer article{
+        display: inline-block;
+        width: 29%;
+        vertical-align: top;
+    }
+
+/*Selectionner une balise grace a son attribut et sa valeur*/
+    [href="http://google.com"]{
+        color: #18bc9c;
+    }
+
+    aside{
+        padding: 1.5rem;
+        background: #233140;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
