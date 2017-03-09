@@ -5,6 +5,8 @@
     
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>9mars- premier site</title>
+    <!--Ajouter la feuille CSS-->
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <!--ouverture de la page-->
@@ -12,10 +14,10 @@
         <!--La navigation principale de la page-->
         <nav>
             <ul>
-                <li><a href="#"></a>start bootstrap</li>
-                <li><a href="#"></a>portfolio</li>
-                <li><a href="#"></a>about</li>
-                <li><a href="#"></a>contact</li>
+                <li><a href="#">start bootstrap</a></li>
+                <li><a href="#">portfolio</li>
+                <li><a href="#">about</a></li>
+                <li><a href="#">contact</a></li>
             </ul>
         </nav>
         <img src="img/profile.png" alt="Photo de profil">
@@ -29,27 +31,27 @@
             <h2>portfolio</h2>
             <article>
                 <a href="#">Loupe</a>
-                <img src="img/cabin" alt="cabin"></img>
+                <img src="img/cabin.png" alt="cabin"></img>
             </article>
             <article>
                 <a href="#">Loupe</a>
-                <img src="img/cake" alt="cake"></img>
+                <img src="img/cake.png" alt="cake"></img>
             </article>
             <article>
                 <a href="#">Loupe</a>
-                <img src="img/circus" alt="circus"></img>
+                <img src="img/circus.png" alt="circus"></img>
             </article>
             <article>
                 <a href="#">Loupe</a>
-                <img src="img/game" alt="game"></img>
+                <img src="img/game.png" alt="game"></img>
             </article>
             <article>
                 <a href="#">Loupe</a>
-                <img src="img/safe" alt="safe"></img>
+                <img src="img/safe.png" alt="safe"></img>
             </article>
             <article>
                 <a href="#">Loupe</a>
-                <img src="img/submarine" alt="submarine"></img>
+                <img src="img/submarine.png" alt="submarine"></img>
             </article>
         </section>
         <section>
@@ -59,7 +61,25 @@
         </section>
         <section>
 
-            <h2></h2>
+            <h2>Contact me</h2>
+            <!--creation formulaire-->
+            <form action="#">
+
+                <!--Ajouter un champs pour le nom-->
+                <!--Placeholder permet d afficher un message dans input-->
+                <input type="text" placeholder="Name" >
+                <!--Ajouter un champs pour le mail-->
+                <input type="email" placeholder="Email">
+                <!--Ajouter un champs pour le telephone-->
+                <input type="text" placeholder="Telephone">
+                <!--Ajouter un champs pour le message-->
+                <textarea placeholder="Message" ></textarea>
+                <!--terminer le formulaire  par input pour valider
+                l'attribut value -->
+                <input type="submit" value="Send">
+
+            </form>
+
         </section>
     </main>
 
@@ -81,7 +101,7 @@
             </article>
 
         </section>
-        <!--information qui a peu de relation avec la zone-->
+        <!--information qui a peu de relation ou le contenu de la page avec la zone-->
          <aside>Under MIT Licence</aside>
     </footer>
 

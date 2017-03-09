@@ -1,0 +1,73 @@
+
+/*style reset*/
+    /*supprimer les marges*/
+
+    *{
+    margin: 0;
+
+    padding: 0;
+    }
+    /*faire en sorte que 1rem soit egal a 10px*/
+    html{
+    font-size: 62.5%;
+    }
+
+    body{
+        font-size: 1.5rem;
+
+        /*changer la famille de caractere*/
+        font-family: "Arial", sans-serif;
+    }
+
+    /*supprimer la decoration des balises A*/
+    a{
+        text-decoration: none;
+    }
+
+    /*faire en sorte que les images ne depasse pas leur parents*/
+
+    img{
+        max-width: 100%;
+    }
+
+
+/*Style header*/
+
+    header{
+         
+         /*Aligner le texte au centre*/
+         text-align: center;
+
+         /*Ajouter couleur dU texte*/
+         color: white;
+
+         /*Ajouter couleur de fond*/
+         background: #18bc9c;
+    }
+
+    nav{
+        /*Mettre le texte en majuscule*/
+        text-transform: uppercase;
+
+        /*Ajouter couleur de fond*/
+        background: #2C3E50;
+        /*Aligner le texte en ligne*/
+        text-align: left;
+
+    }
+
+    nav a{
+        /*modifier la couleur de texte*/
+        color: white;
+
+        /*Passer le texte en gras*/
+        font-weight: bold;
+    }
+
+    li{
+        /*Aligner les balises li*/
+        display: inline-block;
+
+        /*Ajouter une marge exterieur*/
+        margin-right: 1rem;
+    }
