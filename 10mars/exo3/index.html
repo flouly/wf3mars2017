@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>10mars-Positionnement</title>
+
+   
+    <!--Ajouter la feuille CSS de la page en dernier-->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!--ouverture de la page-->
+    <header>
+        <!--La navigation principale de la page-->
+        <nav>
+            <ul>
+                <li><a href="#">start bootstrap</a></li>
+                <li><a href="#">portfolio</li>
+                <li><a href="#">about</a></li>
+                <li><a href="#">contact</a></li>
+            </ul>
+        </nav>
+        <img src="img/profile.png" alt="Photo de profil">
+        <h1>start bootstrap</h1>
+        <p>Web Developer - Graphic Artist - User Experience Designer</p>
+    </header> 
+
+    <!--le contenu principal de la page-->
+    <main>
+
+        <section id="portfolio">
+            <h2>portfolio</h2>
+            <article>
+                <a href="#"><i class="fa fa-search-plus" aria-hidden="true"></i></a>
+                <img src="img/cabin.png" alt="cabin"></img>
+            </article>
+            <article>
+                <a href="#"><i class="fa fa-search-plus" aria-hidden="true"></i></a>
+                <img src="img/cake.png" alt="cake"></img>
+            </article>
+            <article>
+                <a href="#"><i class="fa fa-search-plus" aria-hidden="true"></i></a>
+                <img src="img/circus.png" alt="circus"></img>
+            </article>
+            <article>
+                <a href="#"><i class="fa fa-search-plus" aria-hidden="true"></i></a>
+                <img src="img/game.png" alt="game"></img>
+            </article>
+            <article>
+                <a href="#"><i class="fa fa-search-plus" aria-hidden="true"></i></a>
+                <img src="img/safe.png" alt="safe"></img>
+            </article>
+            <article>
+                <a href="#"><i class="fa fa-search-plus" aria-hidden="true"></i></a>
+                <img src="img/submarine.png" alt="submarine"></img>
+            </article>
+        </section>
+
+        <section id="aboutMe">
+            <h2>About</h2>
+            <p>Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional LESS stylesheets for easy customization. Whether you're a student looking to showcase your work, a professional looking to attract clients, or a graphic artist looking to share your projects, this template is the perfect starting point!</p>
+            <a href="#"><i class="fa fa-download" aria-hidden="true"></i> Download theme</a>
+        </section>
+        
+        <section id="contact">
+
+            <h2>Contact me</h2>
+            <!--creation formulaire-->
+            <form action="#">
+
+                <!--Ajouter un champs pour le nom-->
+                <!--Placeholder permet d afficher un message dans input-->
+                <input type="text" placeholder="Name" >
+                <!--Ajouter un champs pour le mail-->
+                <input type="email" placeholder="Email">
+                <!--Ajouter un champs pour le telephone-->
+                <input type="text" placeholder="Telephone">
+                <!--Ajouter un champs pour le message-->
+                <textarea placeholder="Message" ></textarea>
+                <!--terminer le formulaire  par input pour valider
+                l'attribut value -->
+                <input type="submit" value="Send">
+
+            </form>
+
+        </section>
+    </main>
+
+
+    <!--la fermeture de la page-->
+    <footer>
+        <section>
+            <article>
+                <h3>Location</h3>
+                <p>3481 Melrose Place Beverly Hills, CA 90210</p>
+            </article>
+            <article>
+                <h3>Around the web</h3>
+                <p>Pictos</p>
+            </article>
+            <article>
+                <h3>About</h3>
+                <p>Freelance is a free to use, open source Bootstrap theme created by<a href="http://google.com" target="_blank">Start Bootstrap</a> </p>
+            </article>
+
+        </section>
+        <!--information qui a peu de relation ou le contenu de la page avec la zone-->
+         <aside>Under MIT Licence</aside>
+    </footer>
+
+</body>
+</html>
