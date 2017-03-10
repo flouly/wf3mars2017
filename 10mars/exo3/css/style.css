@@ -1,4 +1,7 @@
 @import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,700,900|Ultra');
+
+
 /*style reset*/
     /*supprimer les marges*/
 
@@ -16,7 +19,7 @@
         font-size: 1.5rem;
 
         /*changer la famille de caractere*/
-        font-family: "Arial", sans-serif;
+        font-family: 'Raleway', sans-serif;
     }
 
     /*supprimer la decoration des balises A*/
@@ -34,6 +37,12 @@
          
           padding: 6rem;
         
+    }
+
+    h1, h2, h3 {
+        font-family: 'Ultra', serif;
+
+        font-weight: 400;
     }
 
     h2{
@@ -63,7 +72,7 @@
 
     /*Style largeur maximum*/
 
-    nav ul, #portfolio, #aboutMe p, #contacts, footer section{
+    nav ul, main section:first-child, main section:nth-child(2) p, main section:last-child, footer section{
     /*definir une largeur maximum*/
         max-width: 95rem;
         /*centrer une balise de type block dans son parent*/
@@ -136,7 +145,7 @@
         position: relative;
     }
 
-    #firstNavLi{
+    nav li:first-child{
         /*Sortir la balise du flux pour la repositioner precisement*/
         position: absolute;
 
@@ -156,10 +165,11 @@
 
     
 
-    #portfolio {
-        text-align: center;}
+    main section:first-child{
+        text-align: center;
+        }
 
-    #portfolio article{
+    main section:first-child article{
 
         /*Ajouter une marge exterieur*/
         margin: 1rem;
@@ -172,7 +182,7 @@
 
     }
 
-     #portfolio a{
+     main section:first-child a{
         font-size: 8rem;
 
          background: rgba(24, 188, 156, .7);
@@ -193,12 +203,12 @@
 
         /*Gerer une transition entre les etats de la balise*/
 
-        -webkit-transition: all 4s;
-    transition: all 4s;
+        -webkit-transition: all .5s;
+    transition: all .5s;
         
          }
 
-         #portfolio a:hover{
+         main section:first-child a:hover{
 
              opacity: 1;
          }
@@ -208,7 +218,7 @@
 
     /*Style about*/
 
-    #aboutMe{
+    main section:nth-child(2){
         /*Modifier la couleur de texte*/
         color: snow;
         /*Modifier la couleur de fond*/
@@ -218,7 +228,7 @@
     }
 
 
-    #aboutMe p{
+    main section:nth-child(2) p{
       /*Affiche le texte sur 2 colonnes*/
     -webkit-column-count: 2; /* Chrome, Safari, Opera */
     -moz-column-count: 2; /* Firefox */
@@ -230,7 +240,7 @@
     margin-bottom: 4rem;
   }
 
-  #aboutMe a{
+  main section:nth-child(2) a{
       color: white;
       border: .3rem solid white ;
       padding: 1rem 1.5rem;
