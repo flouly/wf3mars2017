@@ -1,0 +1,36 @@
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,700,900|Ultra');
+
+
+/*style reset*/
+    /*supprimer les marges*/
+
+    *{
+    margin: 0;
+
+    padding: 0;
+    }
+    /*faire en sorte que 1rem soit egal a 10px*/
+    html{
+    font-size: 62.5%;
+    }
+
+    body{
+        font-size: 1.5rem;
+
+        /*changer la famille de caractere*/
+        font-family: 'Raleway', sans-serif;
+    }
+
+    /*supprimer la decoration des balises A*/
+    a{
+        text-decoration: none;
+    }
+
+    /*faire en sorte que les images ne depasse pas leur parents*/
+
+    img{
+        max-width: 100%;
+    }
+
+ 
