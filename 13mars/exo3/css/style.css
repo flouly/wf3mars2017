@@ -1,0 +1,93 @@
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,700,900|Ultra');
+
+
+/*style reset*/
+    /*supprimer les marges*/
+
+    *{
+    margin: 0;
+
+    padding: 0;
+    }
+    /*faire en sorte que 1rem soit egal a 10px*/
+    html{
+    font-size: 62.5%;
+    }
+
+    body{
+        font-size: 1.5rem;
+
+        /*changer la famille de caractere*/
+        font-family: 'Raleway', sans-serif;
+    }
+
+    
+    a{
+        font-size: 4rem;
+        text-decoration: none;
+        background: black;
+        color: white;
+        padding: 1rem;
+    
+
+    /*les transition s'ajoutent sur l etat de base des balises*/
+    -webkit-transition:  background 2s color 4s;/* Safari */
+    transition: background 2s color 4s padding 6s;
+    }
+
+/*modifier l aspect de la balise au survol*/
+    a:hover{
+        color: red;
+        background: grey;
+        padding: 2rem;
+    }
+    section{
+        background: red;
+        width: 10rem;
+        height: 10rem;
+/*effectuer une transition sur toutes les proprietes*/
+        -webkit-transition:  all 2s ;/* Safari */
+    transition:all 2s  ;
+    
+/*Modifier la courbe d'animation*/
+
+     -webkit-transition-timing-function:easy-in;
+    transition-timing-function:easy-in;
+
+    /*ajouter un delai avant la transition*/
+    -webkit-transition-delay: 4s ;/* Safari */
+    transition-delay: 4s  ;
+
+    }
+
+    section:hover{
+
+        background: blue;
+    -webkit-transform: rotateZ(360deg); /* Safari */
+
+    
+    transform: rotateZ(360deg);
+
+    }
+
+    ul{
+        list-style: none;
+        padding: 0rem;
+    }
+
+    li{
+        border-left: 0 solid red;
+        -webkit-transition:  all .5s ;/* Safari */
+        transition: all .5s  ;
+    }
+
+    li:hover{
+        padding-left:1rem; 
+        color: red;
+        border-left: .5rem solid red;
+    }
+
+   
+
+ 
