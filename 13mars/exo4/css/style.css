@@ -1,0 +1,94 @@
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,700,900|Ultra');
+
+
+/*style reset*/
+    /*supprimer les marges*/
+
+    *{
+    margin: 0;
+
+    padding: 0;
+    }
+    /*faire en sorte que 1rem soit egal a 10px*/
+    html{
+    font-size: 62.5%;
+    }
+
+    body{
+        font-size: 1.5rem;
+
+        /*changer la famille de caractere*/
+        font-family: 'Raleway', sans-serif;
+    }
+
+    /*supprimer la decoration des balises A*/
+    a{
+        text-decoration: none;
+    }
+
+    /*faire en sorte que les images ne depasse pas leur parents*/
+
+    img{
+        max-width: 100%;
+    }
+
+/*La section fait le tour de l'ecran*/
+
+/*Definir les @keyframes*/
+
+@-webkit-keyframes moveMySection{
+    0% { top:0; left:0;}
+    25% {  top:0; left:53.5rem; }
+    50% {  top:55rem; left:53.5rem; }
+    75%{top:55rem; left:0;}
+    100%{top:0; left:0;}
+}
+
+@keyframes moveMySection{
+    /*definir chaque etape de l'animation*/
+    0% { top:0; left:0;}
+    25% {  top:0; left:53.5rem; }
+    50% {  top:55rem; left:53.5rem; }
+    75%{top:55rem; left:0;}
+    100%{top:0; left:0;}
+}
+    section{
+        height: 5rem;
+        width:  5rem;
+        background: red;
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        /*Application de l'animation*/
+
+    animation-name: moveMySection;
+    animation-duration: 4s;
+
+    /*Modifier la courbe d'animation*/
+     -webkit-animation-timing-function:linear;
+    animation-timing-function:linear;
+
+    /*Ajouter un delai avant l'animation*/
+     -webkit-animation-delay: 2s;
+    animation-delay: 2s;
+    
+
+    /*gerer le nombre de boucle*/
+    animation-iteration-count: 3;
+    
+    /*Gerer le sens de l'animation*/
+    animation-direction: alternate;
+    
+    }
+
+    section:nth-child(2){
+        background: blue;
+
+        -webkit-animation-direction: alternate-reverse ;
+        animation-direction: alternate-reverse;
+
+    }
+
+ 
