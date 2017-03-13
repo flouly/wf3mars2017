@@ -31,6 +31,10 @@
         margin: 2rem auto;
         padding: 2rem;
     }
+    ß/*pour permettre de voir toute la page*/
+    main{
+        margin-bottom: 10rem;
+    }
 
     /*supprimer la decoration des balises A*/
     a{
@@ -83,7 +87,7 @@
 
         /*Style footer*/
 
-        /*Faire en sorte que le footer soit toujours colle ebbas ede ls page*/
+        /*Faire en sorte que le footer soit toujours colle en bas de la page*/
         footer{
             position: fixed;
             bottom: 0;

@@ -167,7 +167,7 @@
          background-image: url(../img/star-xxl.png);
          /*bloquer la  repetition de l'image de fond*/
          background-repeat: no-repeat;
-/*modifier la taille de l'image de fond*/
+        /*modifier la taille de l'image de fond*/
          background-size: 100%;
 
          background-color: #18bc9c;
@@ -249,18 +249,14 @@
         /*Gerer une transition entre les etats de la balise*/
 
         -webkit-transition: all .5s;
-    transition: all .5s;
+        transition: all .5s;
+        }
+
+        main section:first-child a:hover{
+            opacity: 1;
+         }
+
         
-         }
-
-                  main section:first-child a:hover{
-
-             opacity: 1;
-         }
-
-         main section:first-child a:hover .fa{
-             top: 50%;
-         }          
 
         main section:first-child .fa{
         position: absolute;
@@ -273,8 +269,11 @@
 
         -webkit-transition: all .5s;
         transition: all .5s;
-}
+        }
 
+        main section:first-child a:hover .fa{
+             top: 50%;
+         }          
 
     /*Style about*/
 
