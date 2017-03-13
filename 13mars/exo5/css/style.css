@@ -1,0 +1,54 @@
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,700,900|Ultra');
+
+
+/*style reset*/
+    /*supprimer les marges*/
+
+    *{
+    margin: 0;
+
+    padding: 0;
+    }
+    /*faire en sorte que 1rem soit egal a 10px*/
+    html{
+    font-size: 62.5%;
+    }
+
+    body{
+        font-size: 1.5rem;
+
+        /*changer la famille de caractere*/
+        font-family: 'Raleway', sans-serif;
+    }
+
+    /*supprimer la decoration des balises A*/
+    a{
+        text-decoration: none;
+    }
+
+    /*faire en sorte que les images ne depasse pas leur parents*/
+
+    img{
+        max-width: 100%;
+    }
+
+    section{
+        position:fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+
+
+
+   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f5f6f6+0,dbdce2+21,b8bac6+49,dddfe3+80,f5f6f6+100;Grey+Pipe */
+background: #f5f6f6; /* Old browsers */
+background: -moz-linear-gradient(top, #f5f6f6 0%, #dbdce2 21%, #b8bac6 49%, #dddfe3 80%, #f5f6f6 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, #f5f6f6 0%,#dbdce2 21%,#b8bac6 49%,#dddfe3 80%,#f5f6f6 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, #f5f6f6 0%,#dbdce2 21%,#b8bac6 49%,#dddfe3 80%,#f5f6f6 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f5f6f6', endColorstr='#f5f6f6',GradientType=0 ); /* IE6-9 */
+
+    }
+
+ 
