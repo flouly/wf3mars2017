@@ -1,19 +1,19 @@
-@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
+
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,700,900');
 
 
     @-webkit-keyframes pictoHeaderAnim {
 
-    0% {transform: translateY(0);}
-    50% {transform: translateY(1rem);}
-    100% {transform: translateY(0);}
+    0% {transform: translateY(0); }
+    50% {transform: translateY(1rem); }
+    100% {transform: translateY(0); }
 }
 
 @keyframes pictoHeaderAnim {
 
-    0% {transform: translateY(0);}
-    50% {transform: translateY(1rem);}
-    100% {transform: translateY(0);}
+    0% {transform: translateY(0); }
+    50% {transform: translateY(1rem); }
+    100% {transform: translateY(0); }
 }
 
 
@@ -51,12 +51,13 @@
     /*Appliquer deux design different pour h1*/
 
     h1 {
-        margin-bottom: 4rem;
+        
         font-size: 1.5rem;
         /*Se cale sur le font-size: */
-        line-height: 1.8rem;
+        line-height: 1.8em;
         font-weight: 400;
         text-transform: uppercase;
+        margin-bottom: 4rem;
     }
 
     h1 b {
@@ -86,6 +87,7 @@
 
     img{
         max-width: 100%;
+        margin-top: .8rem;
     }
 
     /*Style header*/
@@ -97,10 +99,50 @@
 
          background-image: url(../img/img-couverture-iphone.jpg);
 
+        /* Positionner l'image de fond */
+         background-position: top;
+ 
+         /* Modifier la taille de l'image de fond */
+         background-size: 150%;
+ 
+         /* Bloquer l'image de fond */
+         background-attachment: fixed;
+
+        }
+
+    nav{
+         background: #002a35;
+         padding: 1rem;
+         margin-bottom: 4rem;
+    }
+ 
+    li{
+         display: inline-block;
+         width: 45%;
+    }
+
+
          /*Selectioner une balise grace a son attribut*/
     
-
+    [src="img/logo-GRT-gaz-blanc.png"]{
+         width: 15rem;
+         margin-bottom: 4rem;
+    }
  
+    
+    /* Sélectionner une balise suivante */
+     h1 + a {
+         background: #349aa6;
+ 
+         /* Les balises de type inline ne peuvent pas recevoir les propriétés width et heigth */
+         display: inline-block;
+         width: 5rem;
+         height: 5rem;
+         margin-bottom: 8rem;
+  
+          /* Créer un rond avec une balise carrée */
+          border-radius: 50%;
+
 
         /*Appliquer l'animation'*/
         -webkit-animation-name: pictoHeaderAnim;
@@ -114,10 +156,11 @@
 
         /*Definir le nombre de boucle*/
 
+        -webkit-animation-iteration-count: infinite;
+        animation-iteration-count: infinite;
 
-
-
-    }
+     }
+   
 
 
 
@@ -277,4 +320,5 @@
     footer{
 
         font-size: 1rem;
+        padding: 1rem;
     }
