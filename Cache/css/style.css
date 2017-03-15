@@ -6,13 +6,17 @@
     /*supprimer les marges*/
 
     *{
-    margin: 0;
+        margin: 0;
+        padding: 0;
+        /*Inclure dans les largeur le padding et le border*/
 
-    padding: 0;
+        -webkit-box-sizing: border-box ;
+        box-sizing: border-box;
+
     }
     /*faire en sorte que 1rem soit egal a 10px*/
     html{
-    font-size: 62.5%;
+        font-size: 62.5%;
     }
 
     body{

@@ -2,7 +2,12 @@
 
 @import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
 
+*{
+    /*Inclure dans les largeur le padding et le border*/
 
+    -webkit-box-sizing: border-box ;
+    box-sizing: border-box;
+}
 body{
     text-align: center;
 }
@@ -45,7 +50,7 @@ article{
 }
 
 
-/*Configurer*/
+/*Configurer les styles pour les ecrans d'une taille minimale de 500px*/
 @media screen and (min-width:550px){
 
 
@@ -79,7 +84,7 @@ article{
             text-align: left;
         }
 
-        /*Ajuster le style de la nav*/
+        
         nav li{
 
             display: inline-block;
@@ -90,6 +95,14 @@ article{
         main{
             max-width: 950px;
             margin: auto;
+        }
+
+        header{
+            width: 950px;
+            margin: auto;
+            background: red;
+
+            padding: 20px;
         }
 
 }
