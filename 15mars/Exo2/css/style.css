@@ -9,7 +9,7 @@
     100% {transform: translateY(0); }
 }
 
-@keyframes pictoHeaderAnim {
+    @keyframes pictoHeaderAnim {
 
     0% {transform: translateY(0); }
     50% {transform: translateY(1rem); }
@@ -206,7 +206,7 @@
 
     .callToAction:after{
 
-        /*Annuler flotement*/
+        /*Annuler flottement*/
         clear: both;
         
         }

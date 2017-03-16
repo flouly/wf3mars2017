@@ -4,10 +4,10 @@
 
 *{
     /*Inclure dans les largeur le padding et le border*/
-
     -webkit-box-sizing: border-box ;
     box-sizing: border-box;
 }
+
 body{
     text-align: center;
 }
@@ -55,7 +55,7 @@ article{
 
 
     /*Recrer les selecteur pour les modifier */
-
+        /*Mettre le texte dans deux colonne*/
         article{
 
             display: inline-block;
