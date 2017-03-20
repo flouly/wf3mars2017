@@ -1,0 +1,342 @@
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
+@import url('https://fonts.googleapis.com/css?family=Merriweather:400,900|Open+Sans:400,700');
+
+
+/*Reset style*/
+
+    
+
+    *{
+        /*Mise a zero des marges et des padding, prise en compte des bordures pour largeur*/
+        margin: 0;
+        padding: 0;
+
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+
+    
+    /*Mise en correspondance rem et pixel, 1rem = 10px*/
+    html{
+        
+        font-size: 62.5%;
+    }
+
+    body{
+        font-size: 1.5rem;
+        font-family: 'Merriweather', serif;
+        text-align: center;    
+    }
+
+    
+    a, figcaption, nav p{
+        text-decoration: none;
+       
+        
+         -webkit-transition: all .5s;
+         transition: all .5s;
+    }
+
+     header > a, main a{
+        font-size: 1.2rem;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 700;
+        text-transform: uppercase;
+        padding: 1rem 1.5rem;
+
+
+        -webkit-border-radius: 3rem;
+        border-radius: 3rem;
+      }
+
+    /*Les images ne doivent pas depasser le body*/
+    img{
+        max-width: 100%;
+    }
+
+    
+
+    h1, h2, h3{
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 400;
+    }
+
+
+    h1{
+        padding: 10rem 1rem 0 1rem;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 3rem;
+        line-height: 1em;
+        color: white;
+    }
+
+
+    h1::after, h2::after{
+    
+        content: "";
+        display: block;
+        width: 5rem;
+        height: .3rem;
+        margin: 3rem auto 3rem auto;
+        background-color: #F05F40;
+
+    }
+
+    h3{
+        font-size: 2rem;
+        
+    }
+        
+    
+
+     
+
+
+/*Header*/
+
+    header{
+        background-image: url(../img/portable.jpg);
+        background-position: center;
+        background-size: cover;
+        color: white;
+        padding-bottom: 7rem;
+       
+    }
+
+    header > a{
+        color: white;
+        background-color: #F05F40;
+    }
+
+    header > p{
+         padding: 0 2rem;
+         margin-bottom: 4rem;
+    }
+
+ 
+         /*Nav*/
+         
+         nav{
+             color: black;
+             position: fixed;
+             top: 0;
+             left: 0;
+             background-color: white;
+             width: 100%;
+             padding: 2rem;
+             text-align: right;
+             font-weight: 700;
+             border-bottom: 0.2rem solid rgba(165, 152, 152, 0.3)
+         }
+
+         nav a{
+             color: #222;
+         }
+
+        nav a:hover{
+            color:#eb3812;
+        }
+
+        nav > a
+        {
+            position: absolute;
+            font-weight: 700;
+            font-size: 2rem;
+            font-family: 'Open Sans', sans-serif;
+            color:  #F05F40;
+            left: 2rem;
+            top: 2.8rem;
+            text-transform: uppercase;
+            
+        }
+
+        nav p{
+            font-size: 1.2rem;
+            font-weight: 700;
+            font-family: 'Open Sans', sans-serif;
+            display: inline-block;
+            padding: 1rem;
+            border: .1rem solid #e2dede;
+            cursor: pointer;
+            
+
+            -webkit-border-radius: .6rem;
+            border-radius: .6rem;
+        }
+
+        nav p:hover{
+            color: white;
+             background-color: #c6c6c6;
+        }
+
+        nav p:hover + ul{
+            display: block;
+        }
+
+        nav i{
+            padding-left: 1rem;
+
+        }
+
+        li{
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 700;
+            text-align: left;
+            margin: 1rem auto;
+            font-size: 1.3rem;
+
+        }
+
+         nav ul{
+            display: none;
+            border-top: .1rem solid grey;
+            background-color: white;
+            list-style-type: none;
+            padding-top: 1rem;
+            margin-top: 2rem;
+        }
+
+    
+        
+
+
+
+/*Main*/
+
+        section:first-child a, section:nth-child(4) a{
+           
+            color: black;
+            background-color: white;
+           
+        }
+
+        /*Premiere section*/
+        section:first-child{
+
+            background-color: #F05F40;
+            color: white;
+            padding: 6rem 2rem;
+            margin-bottom: 6rem;
+        }
+
+        section h2{
+            font-size: 3rem;
+        }
+
+        section:first-child h2::after{
+            background-color: white;
+            margin: 2rem auto 2rem auto;
+        }
+
+
+        section:first-child p{
+         margin-bottom: 4rem;
+         opacity: .7;
+        }
+       
+
+        /*Seconde section*/
+
+        section:nth-child(2){
+            margin-bottom: 6rem;
+        }
+
+        section:nth-child(2) .fa{
+            margin: 4rem 0 2rem 0;
+            color: #F05F40;
+            
+        }
+
+        section:nth-child(2) p{
+            padding: 2rem;
+            color: #777;
+        }
+
+        /*Troisieme section*/
+
+        figure {
+            position: relative;
+            float: left;
+            line-height: 0;
+            z-index: -1;
+        }
+
+        figcaption {
+            position: absolute;
+            top: 0;
+            left: 0;
+            opacity: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #F05F40;
+            
+            
+        }
+
+        figcaption:hover{
+            opacity: 1
+        }
+
+        figcaption a{
+            position: absolute;
+            line-height: 1;
+            opacity: 1;
+            color: rgba(255, 255, 255, .7);
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+
+           
+           
+        }
+
+        a span{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 80%;
+           
+           
+
+             -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+
+        }
+        
+
+           
+
+        b{
+        font-weight: 400;
+        font-size: 1.3em;
+        color: white;
+        display: block;
+        text-transform: none;
+        margin: 1rem;
+    
+
+
+        }
+
+        /*quatrieme section*/
+
+        section:nth-child(4){
+            clear: both;
+        }
+                
+
+
+        
+
+
+
+
+
+
+         
+
+
+
+ 
