@@ -78,7 +78,7 @@
         display: block;
         width: 5rem;
         height: .3rem;
-        margin: 3rem auto 3rem auto;
+        margin: 2rem auto 2rem auto;
         background-color: #F05F40;
 
     }
@@ -127,7 +127,8 @@
              padding: 2rem;
              text-align: right;
              font-weight: 700;
-             border-bottom: 0.2rem solid rgba(165, 152, 152, 0.3)
+             border-bottom: 0.1rem solid rgba(165, 152, 152, 0.3);
+             z-index: 1;
          }
 
          nav a{
@@ -259,7 +260,7 @@
             position: relative;
             float: left;
             line-height: 0;
-            z-index: -1;
+            
         }
 
         figcaption {
@@ -324,7 +325,64 @@
 
         section:nth-child(4){
             clear: both;
+            margin-bottom: 10rem;
+            padding: 4rem 0 7rem;
+            background-color: black;
         }
+
+        section:nth-child(4) h2{
+            margin-bottom: 2rem;
+            color: white;
+        }
+
+        section:nth-child(4) h2:after{
+            display: none;
+        }
+
+
+        /*Footer*/
+
+        footer{
+            margin-bottom: 10rem;
+        }
+
+
+
+        footer h2{
+            font-size: 3rem;
+        }
+
+        footer p{
+            line-height: 1.5em;
+            padding: 0 2rem;
+            
+        }
+
+        footer .fa{
+            display: block;
+            margin: 3rem 0 1rem;
+        }
+
+        footer article:first-child a{
+            color: #222;
+        }
+
+        footer article:first-of-type a{
+            color: black;
+        }
+
+
+
+
+        footer :nth-child(4) a{
+            color: #eb3812
+        }
+        
+       
+        
+
+
+
                 
 
 
