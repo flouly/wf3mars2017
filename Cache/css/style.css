@@ -1,21 +1,21 @@
-@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
 
 
 
-/*style reset*/
+/*Style reset*/
     
 
     *{
-        /*supprimer les marges*/
+        /*Supprimer les marges*/
         margin: 0;
         padding: 0;
 
-        /*Inclure dans les largeur le padding et le border*/
+        /*Inclure dans la largeur le padding et le border*/
         -webkit-box-sizing: border-box ;
         box-sizing: border-box;
         }
 
-    /*faire en sorte que 1rem soit egal a 10px*/
+    /*Faire en sorte que 1rem soit egal a 10px*/
     html{
         font-size: 62.5%;
     }
@@ -25,13 +25,14 @@
         font-size: 1.5rem;
          }
 
-    /*supprimer la decoration des balises A*/
+    /*Supprimer la décoration des balises A*/
     a{
         text-decoration: none;
     }
 
-    /*faire en sorte que les images ne depasse pas leur parents*/
-        max-width: 100%;
+    /*Faire en sorte que les images ne dépassent pas leur parent*/
+        img{
+            max-width: 100%;
     }
 
  
