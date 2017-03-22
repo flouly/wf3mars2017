@@ -288,7 +288,7 @@ Style main
 
 
 /*
-requete media
+Requete media
 */
 
     /*Ecran d'une taille minimum de 400 px*/
@@ -304,20 +304,21 @@ requete media
                     display: inline-block;
                     width: 49%;
 
+                    /* Gérer les paddings */
                     padding: 0 1rem 0 0;
 
-                }
+                    }
 
-            /*Selectionner toutes les 2 balise a partir de la 2ieme*/
+            /*Selectionner toutes les balises a partir de la 2ieme*/
 
-            .portfolioPage article :nth-child(2n + n){
+                .portfolioPage article:nth-child(2n + 2){
 
-                padding: 0 0 0 1rem;
-            }
+                        padding: 0 0 0 1rem;
+                    }
 
     }
 
-
+    /*Ecran d'une taille minimum de 750 px*/
     @media screen and (min-width: 750px){
 
                 main, h1, nav{

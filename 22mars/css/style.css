@@ -1,0 +1,238 @@
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,700|Roboto:400,700');
+
+
+/*Style reset*/
+    
+
+    *{
+        /*Supprimer les marges*/
+        margin: 0;
+        padding: 0;
+
+        /*Inclure dans la largeur le padding et le border*/
+        -webkit-box-sizing: border-box ;
+        box-sizing: border-box;
+        }
+
+    /*Faire en sorte que 1rem soit egal a 10px*/
+    html{
+        font-size: 62.5%;
+    }
+
+
+    body{
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
+        font-size: 1.5rem;
+        text-align: center;
+        padding: 0 2rem;
+
+         }
+
+
+    h1, h2, h3{
+        font-family: 'Quicksand', sans-serif;
+        font-weight: 400;
+        
+    }
+
+    h1{
+        line-height: 1em;
+        font-size: 2.5rem;
+        margin-bottom: 3rem;
+    }
+
+    h2 {
+        color: white;
+    }
+
+    h3{
+        background: #0b0b2d;
+        color: white;
+        font-size: 2rem;
+    }
+
+
+
+    /*Supprimer la décoration des balises A*/
+    a{
+        text-decoration: none;
+        color: white;
+    }
+
+    /*Faire en sorte que les images ne dépassent pas leur parent*/
+    img{
+            max-width: 100%;
+    }
+
+    p{
+        font-size: 1.3rem;
+        margin: 2rem auto;
+    }
+
+    ul{
+        list-style: none;
+    }
+
+    nav a{
+            font-size: 1rem;
+    }
+   
+   figure{
+       position: relative;
+       margin: 2rem;
+   }
+
+   
+
+ 
+
+
+
+    /*
+    Style header
+    */
+
+        /*Style nav*/
+
+        header nav{
+            background-image: url(../img/back.jpg);
+            background-size: cover;
+            margin-bottom: 3rem;
+        }
+
+        header img{
+            width: 9rem;
+            height: 9rem;
+            border-radius: 50%;
+            float: left;
+        }
+
+
+
+
+
+    /*
+    Style main
+    */
+
+
+        /*Style premiere section*/
+
+        section:first-child{
+            clear:both;
+            margin: 10rem auto;
+        }
+
+        section:first-child p{
+            display: inline-block;
+            width: 49%;
+            padding: 1rem;
+
+        }
+
+
+        /*Style deuxieme section*/
+
+      
+      
+
+
+
+        figcaption a{
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background: gray;
+            color: #0b0b2d;
+            opacity: .8;
+            margin-bottom: .4rem;
+        }
+
+
+        /*Style troisieme section*/
+
+        section:nth-child(3){
+            margin: 5rem auto;
+        }
+
+
+        form{
+                margin-bottom: 2rem;
+        }
+
+        textarea, input:not([type="submit"]){
+            display: block;
+            border: none;
+            width: 100%;
+            margin: 1rem;
+            background:#d8d6d6;
+            padding:.3
+            rem;
+
+        }
+
+        textarea{
+            min-height: 
+                8rem;
+            }
+        
+
+        form :last-child{
+            
+            text-align: left;
+            background: #0b0b2d;
+            color: white;
+            padding: .3rem;
+            border: none;
+        }
+
+        iframe{
+            border: none;
+        }
+
+
+
+       
+
+
+
+
+
+      
+
+        
+
+
+/*Style footer*/
+
+        footer{
+            background: #0b0b2d;
+            color: white;
+            position: relative;
+        }
+
+        footer li{
+            display: inline-block;
+        }
+
+        footer h2{
+            
+            text-align: right;
+        }
+
+        footer ul{
+
+             position: absolute;
+            top: 0;
+            left:0;
+        }
+
+        footer li{
+            display: inline-block;
+           
+           
+        }
+ 
