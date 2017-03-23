@@ -22,7 +22,8 @@
 
 
     body{
-        font-size: 1.5rem;
+        /*1.5rem = 15px*/
+        font-size: 1.5rem; 
          }
 
     /*Supprimer la décoration des balises A*/
@@ -31,8 +32,26 @@
     }
 
     /*Faire en sorte que les images ne dépassent pas leur parent*/
-        img{
-            max-width: 100%;
+    img{
+         max-width: 100%;
+    }
+
+    /*
+    Style header
+    -Ajouter une marge interieur de 20px
+    -La nav ne depasse pas 850px
+    -Les liens de la nav sont centres sauf le premier qui  est a gauche et dernier qui est a droite 
+    */
+
+    header{
+        padding: 2rem;
+        border: .1em dashed black;
+    }
+
+    nav{
+        max-width: 85rem;
+        margin: auto;
+        border: .1rem 
     }
 
  

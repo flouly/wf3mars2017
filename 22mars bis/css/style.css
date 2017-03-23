@@ -1,0 +1,255 @@
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,700|Roboto:400,700');
+
+
+/*Style reset*/
+    
+
+    *{
+        /*Supprimer les marges*/
+        margin: 0;
+        padding: 0;
+
+        /*Inclure dans la largeur le padding et le border*/
+        -webkit-box-sizing: border-box ;
+        box-sizing: border-box;
+        }
+
+    /*Faire en sorte que 1rem soit egal a 10px*/
+    html{
+        font-size: 62.5%;
+    }
+
+
+    body{
+        font-size: 1.5rem;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
+        text-align: center;
+         }
+
+    main{
+        padding: 2rem;
+    }
+
+
+    h1, h2{
+        font-family: 'Quicksand', sans-serif;
+        font-weight: 700;
+        line-height: 1em;
+        padding: 2rem 0;
+        text-align: left;
+    }
+
+    h2 span{
+        background-color:  #0b0b2d;
+        color: white;
+        font-size: 2rem;
+        font-weight: 400;
+        display: block;
+
+    }
+
+    p{
+        margin-bottom: 2rem; 
+    }
+    /*Supprimer la décoration des balises A*/
+    a{
+        text-decoration: none;
+        color: white;
+        margin: 0 .5rem;
+    }
+
+    /*Faire en sorte que les images ne dépassent pas leur parent*/
+    img{
+        max-width: 100%;
+    }
+
+    li{
+        display: inline-block;
+    }
+
+    li:first-child{
+        display: block;
+        color: white;
+        font-size: 2rem;        
+    }
+
+    section{
+        margin-bottom: 4rem;
+    }
+    /*
+    Style header*
+    */
+
+
+    header{
+         background-image: url(../img/back.jpg);
+         background-size: cover;
+         padding: 2rem;
+    }
+
+
+    /*
+    Style main
+    */
+
+        /*Style premiere section*/
+
+        section:first-child img{
+        height: 10rem;
+        float: left;
+        margin-right: 1.5rem;
+
+        -webkit-border-radius: 50%;
+        border-radius: 50%;
+        }
+
+
+        /*Style troisieme section*/
+
+        figure{
+            position: relative;
+            margin-bottom: 1rem;
+        }
+
+        
+
+        figcaption{
+            background: rgba(238, 238, 238, .7);
+            width: 100%;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            text-transform: uppercase;
+        }
+
+       /*Style  quatrieme section*/
+
+
+       form{
+           text-align: left;
+           margin-bottom: 2rem;
+       }
+       textarea, input:not([type="submit"]){
+           display: block;
+           border: none;
+           width: 100%;
+           background: gainsboro;
+           margin: .8rem 0;
+           padding: .5rem;
+       }
+
+       textarea{
+           min-height: 12rem;
+       }
+
+       [type="submit"]{
+           background: #0b0b2d;
+           color: white;
+           padding: .4rem;
+           border: none;
+       }
+
+       iframe{
+           border: none;
+           width: 100%;
+           min-height: 22rem;
+       }
+
+
+/*
+Style footer
+*/
+
+footer{
+    background: #0b0b2d;
+    color: white;
+    padding: 2rem;
+}
+
+
+/*
+Responsive
+*/
+
+    /*Ecran de minimum 850px*/
+
+    @media screen and (min-width:850px){
+
+
+        h1{
+            font-size: 4rem;
+        }
+
+        h2 span{
+            display: initial;
+        }
+
+        p{
+            text-align: left;
+        }
+
+       li:first-child{
+            display: inline-block;
+            position: absolute;
+       }
+
+       main{
+           padding: 4rem 0;
+       }
+
+        main, ul {
+            max-width: 85rem;
+            margin: auto;
+
+        }
+
+        nav ul{
+            position: relative;
+            text-align: right;
+        }
+
+
+        nav li:first-child{
+           
+            left: 0;
+            top: -.8rem;
+            margin: 0;
+        }
+
+
+        section:nth-child(2){
+            clear:both;
+        }
+        section:nth-child(2) p, form, iframe{
+            display: inline-block;
+            width: 49%;
+            vertical-align: top;
+        }
+
+      
+        figure{
+            display: inline-block;
+            width: 24%;
+            margin-right: .5rem;
+        }
+
+
+        footer ul{
+            position: relative;
+            text-align: left;
+        }
+
+        footer li:first-child{
+            top: -0.5rem;
+            right: 0;
+        }
+
+    }
+
+
+
+
+    
+
