@@ -36,22 +36,5 @@
          max-width: 100%;
     }
 
-    /*
-    Style header
-    -Ajouter une marge interieur de 20px
-    -La nav ne depasse pas 850px
-    -Les liens de la nav sont centres sauf le premier qui  est a gauche et dernier qui est a droite 
-    */
-
-    header{
-        padding: 2rem;
-        border: .1em dashed black;
-    }
-
-    nav{
-        max-width: 85rem;
-        margin: auto;
-        border: .1rem 
-    }
 
  
