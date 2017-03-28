@@ -50,14 +50,19 @@
     h1{
         color: #C55394;
         background-image: url(../img/rainbow.png);
-        background-size: cover;
+        background-size: contain;
         background-repeat: no-repeat;
+        background-position: center;
         padding: 5rem;
 
     }
 
     h2{
         margin-bottom: 2rem;
+    }
+
+    h2 .fa{
+        margin-right: 1rem;
     }
 
     h3{
@@ -86,9 +91,10 @@
 
     main{
         margin: 2rem;
-        border: .3rem solid lightgray;
+        border: 0 solid;
         background: #fff;
         padding: 4rem 2rem;
+        box-shadow: 0 0 2rem gray;
         
         -webkit-border-radius: 1rem;
         border-radius: 1rem;
@@ -149,6 +155,7 @@
                     min-height: 30rem;
                     margin: auto;
                     margin-bottom: 1rem;
+                    max-width: 25rem;
                     
                  }
 
@@ -175,7 +182,7 @@ Footer
 */
 
     footer{
-        background:#C55394;
+        background:#E577B5;
     }
 
     aside{
@@ -211,11 +218,13 @@ Responsive
         /*Header*/
             nav{
                 position: relative;
+                padding: 0;
                 
             }
 
             ul{
                 text-align: right;
+                padding: 2rem;
             }
         
 
@@ -223,20 +232,26 @@ Responsive
                 display: inline-block;
                 position: absolute;
                 left: 0;
-                top: 1.3rem;
+                top: 1.4rem;
                 padding-left: 1rem;
-                font-size: 1.5rem;
+                font-size: 2rem;
             }
 
             li{
                 display: initial;
-                padding: .5rem;
                 font-size: 1.3rem;
             }
 
+            a{
+                text-transform: uppercase;
+                font-size: 1rem;
+                padding: 0 1rem;
+            }
+
+
             a:hover{
                 background: #EB43A3;
-                padding: 2rem;
+                padding: 2.5rem 1rem 2.1rem;
              }
 
         /*Deuxieme section*/
@@ -258,6 +273,7 @@ Responsive
         /*Troisieme section*/
             iframe{
                 float: left;
+                max-width: initial;
                 width: 60%;
                 padding-right: 2rem;
             }
