@@ -1,4 +1,4 @@
-// Creerr une variable de type objet
+// Creer une variable de type objet
 
 var user = {
 
