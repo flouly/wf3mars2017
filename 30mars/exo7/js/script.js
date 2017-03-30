@@ -12,4 +12,4 @@ $(document).ready( function(){
 
 
 
-}); //Fin dela fonction d'attente de chargement de DOM
+}); //Fin de la fonction d'attente de chargement de DOM

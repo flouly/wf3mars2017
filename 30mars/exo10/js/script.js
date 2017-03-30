@@ -15,15 +15,15 @@ $(document).ready(function(){
 
 
 
-    // Creer des objers pour la page d'accueil
+    // Creer des objets pour la page d'accueil
     var homeContent = {
         title: 'Bienvenu sur mon site',
-        content: 'Je suis ls tecte de la  page <b>Accueil</b>'
+        content: 'Je suis le texte de la  page <b>Accueil</b>'
     }
 
      var portfolioContent = {
         title: 'Bienvenu sur mon Portfolio',
-        content: 'Je suis ls tecte de la  page <b>Portfolio</b>'
+        content: 'Je suis le texte de la  page <b>Portfolio</b>'
     }
 
      var contactContent = {
@@ -42,7 +42,7 @@ $(document).ready(function(){
         // Modifier le contenu de la balide h2
         $('h2').text(homeContent.title);
 
-        // Modigier le contenu de la balise p
+        // Modifier le contenu de la balise p
         $('p').html(homeContent.content);
 
     });
