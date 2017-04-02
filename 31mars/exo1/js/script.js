@@ -35,6 +35,12 @@ $(document).ready(function(){
     // Generer une balise nav + ul dans le header
     myHeader.append('<nav><i class="fa fa-bars" aria-hidden="true"></i><ul></ul></nav>')
 
+    // Activer le burgerMenu au click sur la balise .fa=bars
+    $('.fa-bars').click(function(){
+
+        $('nav ul').toggleClass('toggleBurger');
+    });
+
     // Faire une boucle sur nav pour generer les liens de la nav
     for(var i = 0; i < myNav.length; i++){
 
@@ -51,8 +57,15 @@ $(document).ready(function(){
     myMain.append('<h2>' + myTitles.Accueil + '</h2>');
     myMain.append('<section>' + myContent.Accueil + '</section>');
 
+    // Ajouter la class active sur la premiere li de la nav
+    $('nav li:first').addClass('active');
+
     // Capter l'evenenent  click sur les balises a en bloquant le comportement naturel des balises a
     $('a').click(function(evt){
+
+
+        // Supprimer la class active des balises li de la nav
+        $('nav li').removeClass('active');
 
         // Bloquer le comportement naturel des balises a
         evt.preventDefault();
@@ -73,6 +86,9 @@ $(document).ready(function(){
             // Selectionner la section pour changer le contenu
             $('section').html(myContent.Accueil);
 
+               // Ajouter la class active sur la balise  li dela balise Selectionnee
+            $(this).parent().addClass('active');
+
         } else if ($(this).attr('href') == 'Portfolio'){
             console.log('Vous etes sur la page Portfolio');
 
@@ -82,6 +98,9 @@ $(document).ready(function(){
             // Selectionner la section pour changer le contenu
             $('section').html(myContent.Portfolio);
 
+               // Ajouter la class active sur la balise  li dela balise Selectionnee
+            $(this).parent().addClass('active');
+
         } else{
             console.log('Vous etes sur la page Contacts');
 
@@ -90,7 +109,13 @@ $(document).ready(function(){
 
                  // Selectionner la section pour changer le contenu
             $('section').html(myContent.Contacts);
+
+            // Ajouter la class active sur la balise  li dela balise Selectionnee
+            $(this).parent().addClass('active');
         };
+
+        // Ferme le toggleBurger
+        $('nav ul').removeClass('toggleBurger');
 
 
     });
