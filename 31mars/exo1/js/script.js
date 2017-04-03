@@ -71,10 +71,10 @@ $(document).ready(function(){
         evt.preventDefault();
 
         // Connaitre l'occurrence de la balise a sur laquelle l'utilisateur a clique
-        console.log($(this));
+        // console.log($(this));
 
         // Recuperer la  valeur de l'attribut href
-        console.log($(this).attr('href'));
+        // console.log($(this).attr('href'));
 
         // Verifier la valeur  de l'attribut href pour afficher le bon titre
         if($(this).attr('href') == 'Accueil'){
