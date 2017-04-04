@@ -1,0 +1,19 @@
+article{
+    background: red;
+    width: 10rem;
+    height: 10rem;
+    position: relative;
+}
+
+section:nth-child(2) article{
+    display: none;
+}
+
+section:nth-child(5) article{
+    display: none;
+}
+    
+
+
+
+ 
