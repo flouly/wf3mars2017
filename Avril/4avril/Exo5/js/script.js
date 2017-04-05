@@ -4,12 +4,12 @@ $(document).ready(function(){
     $('.fa-bars').click(function(){
 
 
-        $('nav ul').fadeIn();
+        $('nav ul').fadeIn(500);
 
 
     });
 
-    // fermer le Burger 
+     // Fermer le Burger menu classique
     $('a').click(function(evt){
 
         evt.preventDefault();

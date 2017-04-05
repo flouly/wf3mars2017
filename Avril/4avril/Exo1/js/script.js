@@ -13,7 +13,7 @@ $(document).ready(function(){
 
     });
 
-        // Fonction animate() valeurs dynamiqes
+        // Fonction animate() valeurs dynamiques
         $('section:nth-child(2) button').click(function(){
 
           $('section:nth-child(2) article').animate({
