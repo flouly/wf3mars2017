@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Page Contact</title>
+</head>
+<body>
+    <h2>Contactez moi</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum, sequi, voluptatum sapiente, veritatis tenetur facere nihil deserunt eum accusamus ad delectus adipisci autem vel quisquam dolore impedit, possimus optio doloremque!</p>
+
+    <form action="php/sendMessage.php">
+
+       <article>
+        <label for="userName">Votre nom</label>
+        <input type="text" id="userName" name="name">
+        </article>
+
+        <article>
+            <label for="userEmail">Votre email</label>
+            <input type="text" id="userEmail" name="email">
+        </article>
+
+        <article>
+            <label for="userSubject">Choisir sujet</label>
+            <select name="subject" id="userSubject">
+                <option value="null">Selectionner</option>
+                <option value="contact">Prise de content</option>
+                <option value="rdv">Prise de rdv</option>
+                <option value="devis">Prise de devis</option>        
+            </select>
+        </article>
+
+        <article>
+            <label for="userMessage">Votre message</label>
+            <textarea name="message" id="userMessage" ></textarea>
+            <p><input type="checkbox">Accepter le CG</p>
+        </article>
+
+        <input type="submit" value="Envoyer">
+
+    </form>
+</body>
+</html>
