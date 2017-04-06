@@ -1,0 +1,377 @@
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700|Sumana');
+
+
+
+/*Style reset*/
+    
+
+    *{
+        /*Supprimer les marges*/
+        margin: 0;
+        padding: 0;
+
+        /*Inclure dans les largeur le padding et le border*/
+        -webkit-box-sizing: border-box ;
+        box-sizing: border-box;
+        }
+
+    /*Faire en sorte que 1rem soit egal a 10px*/
+    html{
+        font-size: 62.5%;
+    }
+
+
+    body{
+        text-align: center;
+        font-size: 1.5rem;
+        font-weight: 400;
+        font-family: 'Roboto', sans-serif;
+
+         }
+
+    h1{
+        font-weight: 400;
+        font-family: 'Sumana', serif;
+        line-height: 3rem;
+        padding-bottom: 2rem;
+    }
+
+    h2{
+        font-family: 'Sumana', serif;
+        margin-bottom: 1rem;
+        font-weight: 400;
+
+    }
+
+    h1 span{
+        display: block;
+        font-family: 'Roboto', sans-serif;
+        font-size: .5em
+    }
+
+    /*Supprimer la decoration des balises */
+    a, header li{
+        text-decoration: none;
+
+        -webkit-transition: all .5s;
+        transition: all .5s;
+    }
+
+    /*Supprimer le style des listes*/
+
+    ul{
+        list-style: none;
+    }
+
+    img{
+        width: 100%;
+    }
+
+/*
+Style header
+*/
+
+        header{
+            background-color: #22175b;
+            color: white;
+            padding: 2rem;
+
+            /*Bloquer les enfants dans le parent*/
+            position: relative;
+        }
+
+        nav{
+            display: none;
+        }
+
+        .aboutPage nav{
+
+            position: fixed;
+            background: #000000;
+            top: 0;
+            left: -100%;
+            height: 100%;
+            width: 20rem;
+            padding: 2rem;
+            z-index: 1000;
+
+            display: block;
+        }
+
+        
+        header > a{
+            /*La balise a qui est enfant direct de header*/
+            font-size: 1.9rem;
+            color: #22175b;
+            background: white;
+            position: absolute;
+            width: 4rem;
+            height: 4rem;
+            padding-top: .7rem;
+            border: .2rem solid #22175b;
+            display: inline-block;
+            
+
+
+            /*Positionner precisement la balise*/
+            left: 50%;
+            top: 100%;
+
+            -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+
+
+            -webkit-border-radius: 50%;
+            border-radius: 50%;
+        }
+
+
+        header li{
+            font-weight: 700;
+            background: rgba(255, 255, 255, .5);
+            padding: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        header li:hover{
+           background: white;
+        }
+
+        header li:hover a{
+                color: #22175b;
+        }
+
+        nav a{
+            color: white;
+        }
+
+/*
+Style main
+*/
+        main{
+                padding: 4rem 2rem 10rem 2rem;
+        }
+        /*Style about */
+
+        [src="img/profil.jpg"]{
+            width: 12rem;
+            margin-bottom: 2rem;
+            border: .4rem solid white;
+
+            -webkit-border-radius: 50%;
+            border-radius: 50%;
+        }
+
+        [src="img/profil.jpg"] + p{
+            margin-bottom: 2rem;
+        }
+
+        h3 +  ul{
+
+            text-align: left;
+            margin: 2rem auto;
+        }
+
+        h3 + ul li{
+            background: red;
+            padding: .1rem;
+            margin-bottom: 1rem;
+            position: relative;
+        }
+
+        h3 + ul p{
+            background: white;
+            padding: 1rem;
+            min-height: 3.5rem;
+            /*pour l'animation*/
+            width: 0;
+        }
+
+        h3 + ul span{
+            position: absolute;
+        }
+        
+        /*Style portfolio*/
+        figure{
+            position: relative;
+        }
+
+
+        figcaption{
+            position: absolute;
+            width: 20rem;
+            background: white;
+            padding: 1rem 2rem;
+            top: 50%;
+            left: 50%;
+
+            -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+
+            -webkit-border-top-left-radius: 1rem;
+            border-top-left-radius: 1rem;
+        }
+
+        figcaption button{
+            position: absolute;
+            left: 0;
+            top: 100%;
+            width: 100%;
+            border: 0;
+            padding: 1rem;
+
+            -webkit-border-top-right-radius: 1rem;
+            border-top-right-radius: 1rem;
+        }
+
+        #modal{
+            position: fixed;
+            z-index: 2000;
+            top: 0;
+            left: 0;
+            background: rgba(0, 0, 0, .7);
+            width: 100%;
+            height: 100%;
+
+            /*pour l'animation*/
+            display: none;
+        }
+
+        #modal article{
+            text-align: left;
+            background: white;
+            max-width: 35rem;
+            margin: 5rem auto;
+            padding: 2rem;
+        }
+        /*Style contacts*/
+
+
+        
+
+
+/*Style footer*/
+
+
+        footer{
+            color: white;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background: #22175b;
+            padding: 2rem;
+            z-index: 1000;
+        }
+
+        footer a{
+            color: white;
+        }
+
+        /*Toutes les balises li du footer sauf la derniere*/
+
+        footer li:not(:last-child){
+            display: inline-block;
+            margin-bottom: 1rem;
+        
+        }
+
+
+
+/*
+Requete media
+*/
+
+    /*Ecran d'une taille minimum de 400 px*/
+
+    @media screen and (min-width: 400px){
+
+            /*Style portfolio*/
+
+                .portfolioPage article{
+
+
+                    /*Passer en 2 colonnes*/
+                    display: inline-block;
+                    width: 49%;
+
+                    /* Gérer les paddings */
+                    padding: 0 1rem 0 0;
+
+                    }
+
+            /*Selectionner toutes les balises a partir de la 2ieme*/
+
+                .portfolioPage article:nth-child(2n + 2){
+
+                        padding: 0 0 0 1rem;
+                    }
+
+    }
+
+    /*Ecran d'une taille minimum de 750 px*/
+    @media screen and (min-width: 750px){
+
+                main, h1, nav{
+                    max-width: 85rem;
+                    margin: auto;
+                }
+
+                h1{
+                    font-size: 4rem;
+                    text-indent: 1rem;
+                }
+
+                h1 span{
+                    display: initial;
+                }
+
+                /*Style header*/
+
+                header{
+                    text-align: left;
+                }
+
+
+                header > a{
+                    display: none;
+                }
+
+
+                nav{
+                    display: block;
+                    text-indent: 1rem;
+                }
+
+
+                /*Aligner les li de la nav*/
+                nav li{
+                    display: inline-block;
+                    text-indent: 0;
+                }
+                /*Style main*/
+
+                main{
+                    padding: 4rem 0 10rem 0;
+                }
+
+
+
+
+
+    }
+
+
+      
+
+        
+
+       
+
+
+        
+
+
+ 
