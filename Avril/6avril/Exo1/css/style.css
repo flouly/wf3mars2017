@@ -260,8 +260,7 @@ Style main
             display: block;
             width: 100%;
             border: none;
-            padding: 1rem;
-           
+            padding: 1rem;      
         }
 
         [type="checkbox"]{
@@ -290,8 +289,7 @@ Style main
         }
         label:not([for="userSubject"]){
             position: absolute;
-            top: .5rem;
-          
+            top: .5rem;        
         }
 
         label.openedLabel{
@@ -299,7 +297,19 @@ Style main
             font-size: 1.2rem;
             color: grey;
             padding: 0;
+       }
 
+        b{
+            font-size: .8rem;
+            text-transform: uppercase;
+            color: red;
+
+            -webkit-transition: opacity 1s;
+            transition: opacity 1s;
+        }
+
+        .hideError b{
+            opacity: 0;
         }
         
 
@@ -408,6 +418,8 @@ Requete media
                 main{
                     padding: 4rem 0 10rem 0;
                 }
+
+              
 
 
 

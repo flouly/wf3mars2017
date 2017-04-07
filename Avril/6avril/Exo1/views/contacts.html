@@ -13,17 +13,17 @@
     <form action="php/sendMessage.php">
 
        <article>
-        <label for="userName">Votre nom</label>
+        <label for="userName">Votre nom <b></b></label>
         <input type="text" id="userName" name="name">
         </article>
 
         <article>
-            <label for="userEmail">Votre email</label>
+            <label for="userEmail">Votre email <b></b></label>
             <input type="text" id="userEmail" name="email">
         </article>
 
         <article>
-            <label for="userSubject">Choisir sujet</label>
+            <label for="userSubject">Choisir sujet <b></b></label>
             <select name="subject" id="userSubject">
                 <option value="null">Selectionner</option>
                 <option value="contact">Prise de content</option>
@@ -33,13 +33,20 @@
         </article>
 
         <article>
-            <label for="userMessage">Votre message</label>
+            <label for="userMessage">Votre message <b></b></label>
             <textarea name="message" id="userMessage" ></textarea>
-            <p><input type="checkbox">Accepter le CG</p>
+            <p><input type="checkbox">Accepter le CG <b></b></p>
         </article>
 
         <input type="submit" value="Envoyer">
 
     </form>
+
+    <section id="modal">
+        <article>
+            <h2>Merci <span></span><i class="fa fa-times" aria-hidden="true"></i></h2>
+            <p>Nous vous recontacterons dans les plus bref delais</p>
+        </article>
+    </section>
 </body>
 </html>
