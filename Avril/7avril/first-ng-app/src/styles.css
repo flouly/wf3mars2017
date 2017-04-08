@@ -1,0 +1,555 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700|Sumana');
+
+@import url('https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css');
+
+/*Style reset*/
+    
+
+    *{
+        /*Supprimer les marges*/
+        margin: 0;
+        padding: 0;
+
+        /*Inclure dans les largeur le padding et le border*/
+        -webkit-box-sizing: border-box ;
+        box-sizing: border-box;
+        }
+
+    /*Faire en sorte que 1rem soit egal a 10px*/
+    html{
+        font-size: 62.5%;
+    }
+
+
+    body{
+        text-align: center;
+        font-size: 1.5rem;
+        font-weight: 400;
+        font-family: 'Roboto', sans-serif;
+
+         }
+
+    h1{
+        font-weight: 400;
+        font-family: 'Sumana', serif;
+        line-height: 3rem;
+        padding-bottom: 2rem;
+    }
+
+    h2{
+        font-family: 'Sumana', serif;
+        margin-bottom: 1rem;
+        font-weight: 400;
+
+    }
+
+    h1 span{
+        display: block;
+        font-family: 'Roboto', sans-serif;
+        font-size: .5em
+    }
+
+    /*Supprimer la decoration des balises */
+    a, header li{
+        text-decoration: none;
+
+        -webkit-transition: all .5s;
+        transition: all .5s;
+    }
+
+    /*Supprimer le style des listes*/
+
+    ul{
+        list-style: none;
+    }
+
+    img{
+        width: 100%;
+    }
+
+/*
+Style header
+*/
+
+        header{
+            background-color: #22175b;
+            color: white;
+            padding: 2rem;
+
+            /*Bloquer les enfants dans le parent*/
+            position: relative;
+        }
+
+        nav{
+           height: 0;
+           overflow: hidden;
+           -webkit-transition: all 1s;
+            transition: all 1s;
+        }
+
+        .openedNav{
+            height: 19.5rem;
+
+            
+        }
+
+        .aboutPage nav{
+
+            position: fixed;
+            background: #000000;
+            top: 0;
+            left: -100%;
+            height: 100%;
+            width: 20rem;
+            padding: 2rem;
+            z-index: 1000;
+
+            display: block;
+        }
+
+        
+        header > a{
+            /*La balise a qui est enfant direct de header*/
+            font-size: 1.9rem;
+            color: #22175b;
+            background: white;
+            position: absolute;
+            width: 4rem;
+            height: 4rem;
+            padding-top: .7rem;
+            border: .2rem solid #22175b;
+            display: inline-block;
+            
+
+
+            /*Positionner precisement la balise*/
+            left: 50%;
+            top: 100%;
+
+            -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+
+
+            -webkit-border-radius: 50%;
+            border-radius: 50%;
+        }
+
+
+        header li{
+            font-weight: 700;
+            background: rgba(255, 255, 255, .5);
+            padding: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        header li:hover{
+           background: white;
+        }
+
+        header li:hover a{
+                color: #22175b;
+        }
+
+        nav a{
+            color: white;
+        }
+
+     
+
+/*
+Style main
+*/
+        main{
+                padding: 4rem 2rem 10rem 2rem;
+        }
+        /*Style about */
+
+        [src="src/app/img/profil.jpg"]{
+            width: 12rem;
+            margin-bottom: 2rem;
+            border: .4rem solid white;
+
+            -webkit-border-radius: 50%;
+            border-radius: 50%;
+        }
+
+        [src="src/app/img/profil.jpg"] + p{
+            margin-bottom: 2rem;
+        }
+
+        h3 +  ul{
+
+            text-align: left;
+            margin: 2rem auto;
+        }
+
+        h3 + ul li{
+            background: red;
+            padding: .1rem;
+            margin-bottom: 1rem;
+            position: relative;
+        }
+
+        h3 + ul p{
+            background: white;
+            padding: 1rem;
+            min-height: 3.5rem;
+            /*pour l'animation*/
+            width: 0;
+        }
+
+        h3 + ul span{
+            position: absolute;
+        }
+        
+        /*Style portfolio*/
+        figure{
+            position: relative;
+        }
+
+
+        figcaption{
+            position: absolute;
+            width: 20rem;
+            background: white;
+            padding: 1rem 2rem;
+            top: 50%;
+            left: 50%;
+
+            -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+
+            -webkit-border-top-left-radius: 1rem;
+            border-top-left-radius: 1rem;
+        }
+
+        figcaption button{
+            position: absolute;
+            left: 0;
+            top: 100%;
+            width: 100%;
+            border: 0;
+            padding: 1rem;
+
+            -webkit-border-top-right-radius: 1rem;
+            border-top-right-radius: 1rem;
+        }
+
+        #modal{
+            position: fixed;
+            z-index: 2000;
+            top: 0;
+            left: 0;
+            background: rgba(0, 0, 0, .7);
+            width: 100%;
+            height: 100%;
+
+            /*pour l'animation*/
+            display: none;
+        }
+
+        #modal article{
+            text-align: left;
+            background: white;
+            max-width: 35rem;
+            margin: 5rem auto;
+            padding: 2rem;
+        }
+        /*Style contacts*/
+        form{
+            text-align: left;
+            margin: 2em auto;
+        }
+
+        select{
+            margin: 1rem auto 3rem auto;
+        }
+
+        textarea, input, label{
+            display: block;
+            width: 100%;
+            border: none;
+            padding: 1rem;      
+        }
+
+        [type="checkbox"]{
+            display: inline-block;
+            width: auto;
+        }
+
+        textarea, input:not([type="submit"]){
+            border-bottom: .1rem solid #22175b;
+            margin-bottom: 2rem;
+        }
+
+        textarea{
+            height: 13rem;
+        }
+
+        form article{
+            position: relative;
+        }
+
+        label{
+            padding: 0;
+            font-weight: 700;
+            transition: all 1s;
+            bottom: 25%
+        }
+        label:not([for="userSubject"]){
+            position: absolute;
+            top: .5rem;        
+        }
+
+        label.openedLabel{
+            top: -1.5rem;
+            font-size: 1.2rem;
+            color: grey;
+            padding: 0;
+       }
+
+        b{
+            font-size: .8rem;
+            text-transform: uppercase;
+            color: red;
+
+            -webkit-transition: opacity 1s;
+            transition: opacity 1s;
+        }
+
+        .hideError b{
+            opacity: 0;
+        }
+        
+
+
+/*Style footer*/
+
+
+        footer{
+            color: white;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background: #22175b;
+            padding: 2rem;
+            z-index: 1000;
+        }
+
+        footer a{
+            color: white;
+        }
+
+        /*Toutes les balises li du footer sauf la derniere*/
+
+        footer li:not(:last-child){
+            display: inline-block;
+            margin-bottom: 1rem;
+        
+        }
+
+
+
+/*
+Requete media
+*/
+
+    /*Ecran d'une taille minimum de 400 px*/
+
+    @media screen and (min-width: 400px){
+
+            /*Style portfolio*/
+
+                .portfolioPage article{
+
+
+                    /*Passer en 2 colonnes*/
+                    display: inline-block;
+                    width: 49%;
+
+                    /* Gérer les paddings */
+                    padding: 0 1rem 0 0;
+
+                    }
+
+            /*Selectionner toutes les balises a partir de la 2ieme*/
+
+                .portfolioPage article:nth-child(2n + 2){
+
+                        padding: 0 0 0 1rem;
+                    }
+
+    }
+
+    /*Ecran d'une taille minimum de 750 px*/
+    @media screen and (min-width: 750px){
+
+                main, h1, nav{
+                    max-width: 85rem;
+                    margin: auto;
+                }
+
+                h1{
+                    font-size: 4rem;
+                    text-indent: 1rem;
+                }
+
+                h1 span{
+                    display: initial;
+                }
+
+                /*Style header*/
+
+                header{
+                    text-align: left;
+                }
+
+
+                header > a{
+                    display: none;
+                }
+
+
+                nav{
+                    display: block;
+                    text-indent: 1rem;
+                }
+
+
+                /*Aligner les li de la nav*/
+                nav li{
+                    display: inline-block;
+                    text-indent: 0;
+                }
+                /*Style main*/
+
+                main{
+                    padding: 4rem 0 10rem 0;
+                }
+
+            
+    }
+
+   #appLoader{
+            background: #22175b ;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            padding-top: 15rem;
+
+            -webkit-transition: all .5s;
+            transition: all .5s;
+
+            -webkit-transition-delay: .5s;
+            transition-delay: .5s;
+        }
+
+        .closedLoader{
+            opacity: 0;
+        }
+
+/*
+From http://tobiasahlin.com/spinkit/
+*/
+.sk-folding-cube {
+  margin: 20px auto;
+  width: 40px;
+  height: 40px;
+  position: relative;
+  -webkit-transform: rotateZ(45deg);
+          transform: rotateZ(45deg);
+}
+
+.sk-folding-cube .sk-cube {
+  float: left;
+  width: 50%;
+  height: 50%;
+  position: relative;
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1); 
+}
+.sk-folding-cube .sk-cube:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  -webkit-animation: sk-foldCubeAngle 2.4s i nfinite linear both;
+          animation: sk-foldCubeAngle 2.4s infinite linear both;
+  -webkit-transform-origin: 100% 100%;
+      -ms-transform-origin: 100% 100%;
+          transform-origin: 100% 100%;
+}
+.sk-folding-cube .sk-cube2 {
+  -webkit-transform: scale(1.1) rotateZ(90deg);
+          transform: scale(1.1) rotateZ(90deg);
+}
+.sk-folding-cube .sk-cube3 {
+  -webkit-transform: scale(1.1) rotateZ(180deg);
+          transform: scale(1.1) rotateZ(180deg);
+}
+.sk-folding-cube .sk-cube4 {
+  -webkit-transform: scale(1.1) rotateZ(270deg);
+          transform: scale(1.1) rotateZ(270deg);
+}
+.sk-folding-cube .sk-cube2:before {
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s;
+}
+.sk-folding-cube .sk-cube3:before {
+  -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s; 
+}
+.sk-folding-cube .sk-cube4:before {
+  -webkit-animation-delay: 0.9s;
+          animation-delay: 0.9s;
+}
+@-webkit-keyframes sk-foldCubeAngle {
+  0%, 10% {
+    -webkit-transform: perspective(140px) rotateX(-180deg);
+            transform: perspective(140px) rotateX(-180deg);
+    opacity: 0; 
+  } 25%, 75% {
+    -webkit-transform: perspective(140px) rotateX(0deg);
+            transform: perspective(140px) rotateX(0deg);
+    opacity: 1; 
+  } 90%, 100% {
+    -webkit-transform: perspective(140px) rotateY(180deg);
+            transform: perspective(140px) rotateY(180deg);
+    opacity: 0; 
+  } 
+}
+
+@keyframes sk-foldCubeAngle {
+  0%, 10% {
+    -webkit-transform: perspective(140px) rotateX(-180deg);
+            transform: perspective(140px) rotateX(-180deg);
+    opacity: 0; 
+  } 25%, 75% {
+    -webkit-transform: perspective(140px) rotateX(0deg);
+            transform: perspective(140px) rotateX(0deg);
+    opacity: 1; 
+  } 90%, 100% {
+    -webkit-transform: perspective(140px) rotateY(180deg);
+            transform: perspective(140px) rotateY(180deg);
+    opacity: 0; 
+  }
+}
+        
+
+       
+
+
+        
+
+
+ 

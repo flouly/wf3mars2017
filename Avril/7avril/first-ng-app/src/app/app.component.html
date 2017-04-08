@@ -1,0 +1,21 @@
+<header class="animated fadeInDown">
+  <h1>F Louly <span>Etudiant developppeur</span></h1>
+  <a (click)="openBurger()"><i class="fa fa-bars" ></i></a>
+
+  <!--Ajouter une class conditionnelle-->
+  <nav [ngClass]="{'openedNav': burgerIsOpen}">
+    <ul>
+      <li><a (click)="closeBurger('/')">Accueil</a></li>
+      <li><a (click)="closeBurger('/about')">About</a></li>
+      <li><a (click)="closeBurger('/portfolio')">Porfolio</a></li>
+      <li><a (click)="closeBurger('/contacts')">Contacts</a></li>
+    </ul>
+  </nav>
+</header>
+<main  class="animated flipInY">
+  <!--ajouter la directive pour afficher  le contenu des route-->
+  <router-outlet></router-outlet>
+</main>
+<footer  class="animated fadeInDown">
+Under Licence
+</footer>
