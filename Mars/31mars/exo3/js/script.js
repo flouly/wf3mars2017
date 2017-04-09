@@ -66,7 +66,7 @@ $(document).ready(function(){
         $('section:last').append('<article><h4>' + userMessage + '</h4><p>' + userName + '</p></article>');
 
         // Vider les champs de formulaire
-        $('input:not([type="submit"]').val('');
+        $('input:not([type="submit"])').val('');
         $('textarea').val('');
 
     };

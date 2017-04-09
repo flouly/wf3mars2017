@@ -1,0 +1,69 @@
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+section:first-child article{
+    margin-bottom: 2rem;
+    position: relative;
+   
+
+}
+
+
+textarea, input{
+    display: block;
+    width: 100%; 
+
+}
+
+textarea{
+    height: 8rem;
+}
+
+input:not([type="submit"]){
+        height: 2rem;
+}
+
+[for="userName"]{
+    position: absolute;
+    top: 20%;
+    left:0;
+}
+
+[for="userMessage"]{
+     position: absolute;
+    top: 0%;
+    left:0;
+}
+
+b{
+    color: red;
+}
+
+.moveLabel{
+    position: absolute;
+    left: 0;
+    top: -1.3rem;
+
+}
+
+.hidden b{
+    opacity: 0;
+}
+
+ section:last-child{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(19, 21, 21, .5);
+
+    display: none;
+}
+
+section:last-child article{
+    background: white;
+    height: 20rem;
+    margin: 7rem auto 2rem auto;
+
+
+}

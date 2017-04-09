@@ -73,7 +73,7 @@ $(document).ready(function(){
 
                 };
                 
-            });
+        });
 
               // Fermer la modal au click sur .fa-times
                 $('.fa-times').click(function(){
@@ -137,7 +137,7 @@ $(document).ready(function(){
                     // Envoie des donnees a php
                     // Reponse ok
 
-                            // Ajouter la valeur de userName dans la balise h2 apan de la modal
+                            // Ajouter la valeur de userName dans la balise h2 span de la modal
                             $('#modal span').text(userName.val());
 
                             // Afficher la modal

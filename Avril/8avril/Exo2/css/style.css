@@ -1,0 +1,49 @@
+
+article{
+    margin-bottom: 2rem;
+    position: relative;
+   
+
+}
+
+
+textarea, input{
+    display: block;
+    width: 100%; 
+
+}
+
+textarea{
+    height: 8rem;
+}
+
+input:not([type="submit"]){
+        height: 2rem;
+}
+
+[for="userName"]{
+    position: absolute;
+    top: 20%;
+    left:0;
+}
+
+[for="userMessage"]{
+     position: absolute;
+    top: 0%;
+    left:0;
+}
+
+b{
+    color: red;
+}
+
+.moveLabel{
+    position: absolute;
+    left: 0;
+    top: -1.3rem;
+
+}
+
+.hidden b{
+    opacity: 0;
+}
