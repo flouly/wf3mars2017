@@ -1,0 +1,227 @@
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+@import url('https://fonts.googleapis.com/css?family=Crete+Round|Roboto:400,700');
+
+
+/*
+Style reset
+*/
+    
+
+    *{
+        /*Supprimer les marges*/
+        margin: 0;
+        padding: 0;
+
+        /*Inclure dans la largeur le padding et le border*/
+        -webkit-box-sizing: border-box ;
+        box-sizing: border-box;
+        }
+
+    /*Faire en sorte que 1rem soit egal a 10px*/
+    html{
+        font-size: 62.5%;
+        
+    }
+
+
+    body{
+        /*1.5rem = 15px*/
+        font-size: 1.5rem; 
+        font-family: Crete Round;
+        text-align: center;
+         }
+    
+    h2{
+        font-family:roboto;
+        font-weight: 400;
+        text-transform: uppercase;
+    }
+
+    h2 + p{
+        margin-bottom: 4rem;
+        color: gray;
+    }
+
+    /*Supprimer la décoration des balises A*/
+    a{
+        text-decoration: none;
+    }
+
+    ul{
+        list-style: none:
+    }
+
+    /*Faire en sorte que les images ne dépassent pas leur parent*/
+    img{
+         max-width: 100%;
+    }
+
+/*
+Header
+*/
+
+    header{
+        color: white;
+        padding: 2rem;
+        background-image: url(../img/header-bg.jpg);
+        background-size: cover;
+    }
+
+    li:not(:first-child){
+        display: inline-block;
+    }
+
+    li:first-child a{
+        font-size: 2rem;
+        color: #f9ce4b;
+    }
+
+    nav a{
+        color: white;
+        text-transform: uppercase;
+    }
+    h1{
+        margin-bottom: 2rem;
+    }
+    h1 span{
+        display: block;
+        font-size: 2em;
+    }
+
+    h1 + a, [type="submit"]{
+        color: white;
+        background-color:  #f9ce4b;
+        border: none;
+    }
+
+    /*
+    Portfolio
+    */
+
+    section:first-child{
+        background-color: #eee;
+        padding: 4rem 2rem;
+
+    }
+
+    figure{
+        background: white;
+    }
+
+    figure aside{
+        max-height: 27rem;
+        overflow: hidden;
+    }
+
+    figcaption{
+        padding: 2rem;
+    }
+
+    figcaption i{
+        color: gray;
+        display: block;
+    }
+
+
+
+
+
+
+
+/*
+Contact
+*/
+    section:nth-child(2){
+        background-image: url('../img/map-image.png');
+        background-size: 100%;
+        background-color:rgba(0, 0, 0, .8);
+        color: white;
+        padding: 6rem;  
+        
+    }
+
+    textarea, input{
+        display: block;
+        width: 100%;
+    }
+
+    textarea{
+        height: 12rem;
+    }
+
+    article{
+         position: relative;
+        margin-bottom: 4rem;
+    }
+
+   
+    [for="userName"]{
+         position: absolute;
+         top: 0;
+         left: 0;
+         color: gray;
+         text-transform: uppercase;
+     }
+
+    [for="userPhone"]{
+         position: absolute;
+         top: 0;
+         left: 0;
+         color: gray;
+         text-transform: uppercase;
+     }
+
+    [for="userMessage"]{
+         position: absolute;
+         top: 0;
+         left: 0;
+         color: gray;
+         text-transform: uppercase;
+     }
+
+
+
+     b{
+         color:red;
+         font-size: .8rem;
+     }
+
+    .moveLabel{
+        position: absolute;
+         top: -1.8rem;
+         left: 0;
+         color: gray;
+         text-transform: uppercase;
+    }
+
+    .hide b{
+        opacity: 0;
+    }
+
+    /*
+    Modal
+    */
+
+    div{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, .8);
+
+        display: none;
+
+    }
+
+    div section{
+        color: black;
+        background-color: white;
+        width: 30rem;
+        margin: 5rem auto;
+        position: relative;
+    
+    }
+
+
+
