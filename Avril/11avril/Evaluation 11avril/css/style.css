@@ -1,0 +1,215 @@
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+@import url('https://fonts.googleapis.com/css?family=Merienda');
+
+
+/*
+Style reset
+*/
+    
+
+    *{
+        /*Supprimer les marges*/
+        margin: 0;
+        padding: 0;
+
+        /*Inclure dans la largeur le padding et le border*/
+        -webkit-box-sizing: border-box ;
+        box-sizing: border-box;
+        }
+
+    /*Faire en sorte que 1rem soit egal a 10px*/
+    html{
+        font-size: 62.5%;
+    }
+
+
+    body{
+        /*1.5rem = 15px*/
+        font-size: 1.5rem;
+        text-align: center;
+        
+         }
+
+
+    /*Faire en sorte que les images ne dépassent pas leur parent*/
+    img{
+         max-width: 100%;
+    }
+
+    footer, header{
+        background-color: #061339;
+        color: white;
+    }
+
+    header{
+        text-align: left;
+    }
+
+    footer{
+        text-align: right;
+        font-size: 1rem;
+    }
+
+    aside, h1, h2{
+        font-family: Merienda;
+    }
+
+    h1 span{
+        display: block;
+    }
+
+    h2{
+        color: #2F4073;
+    }
+
+    section:last-child h2{
+        margin-bottom: 2rem;
+    }
+
+    article h2{
+        font-size: 1.5rem;
+    }
+
+
+    aside{
+        padding: 1rem;
+    }
+
+
+
+/*
+Header
+*/
+
+/*
+Main
+*/
+
+section:first-child{
+background-image: url(../img/background.jpg);
+background-color: #B9CDFF;
+background-position: cover;
+margin-bottom: 4rem;
+padding: 5rem 1rem;
+color:#FFF;
+
+
+}
+
+section:nth-child(2){
+    padding: 1rem;
+     
+}
+
+
+section:last-child{
+    padding: 3rem 1rem;
+        background-color: rgba(216, 217, 220, 0.87);
+}
+
+
+section:last-child img{
+   
+    background-color: #7885A5;
+    
+}
+
+section:last-child:hover img{
+    background-color: #061339;
+}
+
+
+/*
+Formulaire
+*/
+input, select, label, textarea{
+    display: block;
+    width: 100%;
+    padding: .8rem;
+
+    -webkit-border-radius: .5rem;
+	border-radius: .5rem;
+}
+
+form{
+border: .2rem solid gray;
+text-align: left;
+padding: 1rem;
+margin-bottom: 3rem;
+margin-top: 2rem;
+
+-webkit-border-radius: .5rem;
+	border-radius: .5rem;
+}
+
+textarea{
+    min-height: 20rem;
+}
+
+[type="submit"]{
+    border: none;
+    margin-top: 2rem;
+    background-color:#62b562;
+    color: white;
+    
+}
+
+.error{
+    border: .3rem solid red;
+}
+
+
+/*
+Responsive
+*/
+
+
+ /*
+ Pour les ecrans d'ume taille mimimum de 850px; mettre les articles sur 2 colonnes
+ */
+
+ @media screen and ( min-width: 850px){
+
+
+        main{
+
+            max-width: 85rem;
+            margin: auto;
+        }
+
+        h1 span{
+            display: initial;
+        }
+
+        article{
+            display:inline-block;
+            vertical-align: top;
+        }
+
+        article img{
+            height: 100%;
+        }
+
+        article:first-child{
+            width:69%;
+        }
+
+        article:nth-child(2)-child{
+            width: 30%;            
+        }
+
+
+     
+
+
+ }
+
+
+
+
+
+
+
+
+
+ 
